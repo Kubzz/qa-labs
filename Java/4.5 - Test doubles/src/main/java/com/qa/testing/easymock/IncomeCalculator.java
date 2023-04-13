@@ -1,16 +1,6 @@
 package com.qa.testing.easymock;
 
 public class IncomeCalculator {
-	private ICalcMethod calcMethod;
-    private Position position;
-
-    public void setCalcMethod(ICalcMethod calcMethod) {
-        this.calcMethod = calcMethod;
-    }
-
-    public void setPosition(Position position) {
-        this.position = position;
-    }
 
     public double calc(ICalcMethod calcMethod, Position position) {
         if (calcMethod == null) {
