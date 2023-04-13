@@ -12,7 +12,7 @@ public class IncomeCalculator {
         this.position = position;
     }
 
-    public double calc() {
+    public double calc(ICalcMethod calcMethod, Position position) {
         if (calcMethod == null) {
             throw new RuntimeException("CalcMethod not yet maintained");
         }
