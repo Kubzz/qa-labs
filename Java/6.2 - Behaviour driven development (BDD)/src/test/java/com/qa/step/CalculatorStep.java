@@ -16,9 +16,9 @@ public class CalculatorStep {
 		System.out.println("Created");
 	}
 		
-	@When("I add $number1 and $number2")
-	public void AddCal(int x,int y) {
-		myCal.addTwoNumber(x, y);
+	@When("I $type $number1 and $number2")
+	public void Calc(String type, int x,int y) {
+		myCal.calcTwoNumber(type, x, y);
 	}
 
 	@Then("the outcome should be $result")

@@ -7,8 +7,14 @@ public class Calculator {
 		this.answer = 0;
 	}
 
-	public void addTwoNumber(int x, int y) {
-		this.answer = x + y;
+	public void calcTwoNumber(String type, int x, int y) {
+		if (type.equals("add")) {
+			this.answer = x + y;
+		} else if (type.equals("subtract")) {
+			this.answer = x - y;
+		} else if (type.equals("multiply")) {
+			this.answer = x * y;
+		}
 	}
 
 	public int getresult() {
